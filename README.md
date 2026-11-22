@@ -109,9 +109,10 @@ for q in client.dataset(run["defaultDatasetId"]).iterate_items():
 | `site` | stackoverflow | Any Stack Exchange site |
 | `sort` | creation | Activity, newest, votes, hot, week, month |
 | `unansweredOnly` | false | Only unanswered questions |
-| `minScore` | 0 | Skip low-scored questions |
+| `minScore` | – | Skip low-scored questions |
 | `fromDate` | – | Asked on or after this date |
 | `includeBody` | true | Question text and top answer |
+| `maxPerQuery` | 0 | Cap per tag (0 = none) |
 | `maxResults` | 50 | Total cap per run |
 
 ---
